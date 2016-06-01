@@ -61,7 +61,7 @@
                     }
 
 
-                    //and me save kr rha hun last three like '085' but increasae krta hun to 86 aata h..like 086 ni aata..thats why i did this
+                    
                  echo '<div class="row">';
                     echo '<div class="col-lg-8">';
                     for($i=0;$i<=$size;$i++)
@@ -70,7 +70,7 @@
                         {
                             $s--;
                             $postData = array(
-                                    'rid' => $col1.'0'.$rollF++,// yaha 0 lagaya h.. 1pe13cs'0'
+                                    'rid' => $col1.'0'.$rollF++,// here.. 1pe13cs'0'
                                     'submit' => 'abc'
                                     );
                         }
@@ -104,7 +104,7 @@
                             $k++;
                             if($k==17)
                             {   
-                                if($abc->plaintext === '')
+                                if($abc->plaintext === "")
                                     $rank[$col1.($rollF-1)] = 0;
                                 else 
                                     $rank[$col1.($rollF-1)] = intval(str_replace(" ", "", $abc->plaintext)); 
